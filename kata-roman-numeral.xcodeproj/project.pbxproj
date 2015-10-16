@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BED782F71BC6AF5D00F3CD14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */; };
+		BED782F91BC6AF5D00F3CD14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED782F81BC6AF5D00F3CD14 /* ViewController.swift */; };
+		BED782FC1BC6AF5D00F3CD14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED782FA1BC6AF5D00F3CD14 /* Main.storyboard */; };
+		BED782FE1BC6AF5D00F3CD14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED782FD1BC6AF5D00F3CD14 /* Assets.xcassets */; };
+		BED783011BC6AF5D00F3CD14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED782FF1BC6AF5D00F3CD14 /* LaunchScreen.storyboard */; };
+		BED7830C1BC6AF5D00F3CD14 /* kata_roman_numeralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED7830B1BC6AF5D00F3CD14 /* kata_roman_numeralTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BED783081BC6AF5D00F3CD14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED782EB1BC6AF5D00F3CD14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED782F21BC6AF5D00F3CD14;
+			remoteInfo = "kata-roman-numeral";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BED782F31BC6AF5D00F3CD14 /* kata-roman-numeral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kata-roman-numeral.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BED782F81BC6AF5D00F3CD14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BED782FB1BC6AF5D00F3CD14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BED782FD1BC6AF5D00F3CD14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BED783001BC6AF5D00F3CD14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BED783021BC6AF5D00F3CD14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED783071BC6AF5D00F3CD14 /* kata-roman-numeralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kata-roman-numeralTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED7830B1BC6AF5D00F3CD14 /* kata_roman_numeralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kata_roman_numeralTests.swift; sourceTree = "<group>"; };
+		BED7830D1BC6AF5D00F3CD14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BED782F01BC6AF5D00F3CD14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED783041BC6AF5D00F3CD14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEC2CE981BC81C47001ED63C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BED782FD1BC6AF5D00F3CD14 /* Assets.xcassets */,
+				BED782FA1BC6AF5D00F3CD14 /* Main.storyboard */,
+				BED782FF1BC6AF5D00F3CD14 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BED782EA1BC6AF5D00F3CD14 = {
+			isa = PBXGroup;
+			children = (
+				BED782F51BC6AF5D00F3CD14 /* kata-roman-numeral */,
+				BED7830A1BC6AF5D00F3CD14 /* kata-roman-numeralTests */,
+				BED782F41BC6AF5D00F3CD14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BED782F41BC6AF5D00F3CD14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BED782F31BC6AF5D00F3CD14 /* kata-roman-numeral.app */,
+				BED783071BC6AF5D00F3CD14 /* kata-roman-numeralTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BED782F51BC6AF5D00F3CD14 /* kata-roman-numeral */ = {
+			isa = PBXGroup;
+			children = (
+				BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */,
+				BED782F81BC6AF5D00F3CD14 /* ViewController.swift */,
+				BEC2CE981BC81C47001ED63C /* Resources */,
+				BED783021BC6AF5D00F3CD14 /* Info.plist */,
+			);
+			path = "kata-roman-numeral";
+			sourceTree = "<group>";
+		};
+		BED7830A1BC6AF5D00F3CD14 /* kata-roman-numeralTests */ = {
+			isa = PBXGroup;
+			children = (
+				BED7830B1BC6AF5D00F3CD14 /* kata_roman_numeralTests.swift */,
+				BED7830D1BC6AF5D00F3CD14 /* Info.plist */,
+			);
+			path = "kata-roman-numeralTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BED782F21BC6AF5D00F3CD14 /* kata-roman-numeral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED783101BC6AF5D00F3CD14 /* Build configuration list for PBXNativeTarget "kata-roman-numeral" */;
+			buildPhases = (
+				BED782EF1BC6AF5D00F3CD14 /* Sources */,
+				BED782F01BC6AF5D00F3CD14 /* Frameworks */,
+				BED782F11BC6AF5D00F3CD14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kata-roman-numeral";
+			productName = "kata-roman-numeral";
+			productReference = BED782F31BC6AF5D00F3CD14 /* kata-roman-numeral.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BED783061BC6AF5D00F3CD14 /* kata-roman-numeralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED783131BC6AF5D00F3CD14 /* Build configuration list for PBXNativeTarget "kata-roman-numeralTests" */;
+			buildPhases = (
+				BED783031BC6AF5D00F3CD14 /* Sources */,
+				BED783041BC6AF5D00F3CD14 /* Frameworks */,
+				BED783051BC6AF5D00F3CD14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BED783091BC6AF5D00F3CD14 /* PBXTargetDependency */,
+			);
+			name = "kata-roman-numeralTests";
+			productName = "kata-roman-numeralTests";
+			productReference = BED783071BC6AF5D00F3CD14 /* kata-roman-numeralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BED782EB1BC6AF5D00F3CD14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Ondrej Fabian";
+				TargetAttributes = {
+					BED782F21BC6AF5D00F3CD14 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					BED783061BC6AF5D00F3CD14 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = BED782F21BC6AF5D00F3CD14;
+					};
+				};
+			};
+			buildConfigurationList = BED782EE1BC6AF5D00F3CD14 /* Build configuration list for PBXProject "kata-roman-numeral" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BED782EA1BC6AF5D00F3CD14;
+			productRefGroup = BED782F41BC6AF5D00F3CD14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BED782F21BC6AF5D00F3CD14 /* kata-roman-numeral */,
+				BED783061BC6AF5D00F3CD14 /* kata-roman-numeralTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BED782F11BC6AF5D00F3CD14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED783011BC6AF5D00F3CD14 /* LaunchScreen.storyboard in Resources */,
+				BED782FE1BC6AF5D00F3CD14 /* Assets.xcassets in Resources */,
+				BED782FC1BC6AF5D00F3CD14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED783051BC6AF5D00F3CD14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BED782EF1BC6AF5D00F3CD14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED782F91BC6AF5D00F3CD14 /* ViewController.swift in Sources */,
+				BED782F71BC6AF5D00F3CD14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED783031BC6AF5D00F3CD14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED7830C1BC6AF5D00F3CD14 /* kata_roman_numeralTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BED783091BC6AF5D00F3CD14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED782F21BC6AF5D00F3CD14 /* kata-roman-numeral */;
+			targetProxy = BED783081BC6AF5D00F3CD14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BED782FA1BC6AF5D00F3CD14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BED782FB1BC6AF5D00F3CD14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BED782FF1BC6AF5D00F3CD14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BED783001BC6AF5D00F3CD14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BED7830E1BC6AF5D00F3CD14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BED7830F1BC6AF5D00F3CD14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BED783111BC6AF5D00F3CD14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "kata-roman-numeral/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.fabo.kata-roman-numeral";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BED783121BC6AF5D00F3CD14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "kata-roman-numeral/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.fabo.kata-roman-numeral";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BED783141BC6AF5D00F3CD14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "kata-roman-numeralTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.fabo.kata-roman-numeralTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kata-roman-numeral.app/kata-roman-numeral";
+			};
+			name = Debug;
+		};
+		BED783151BC6AF5D00F3CD14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "kata-roman-numeralTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.fabo.kata-roman-numeralTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kata-roman-numeral.app/kata-roman-numeral";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BED782EE1BC6AF5D00F3CD14 /* Build configuration list for PBXProject "kata-roman-numeral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED7830E1BC6AF5D00F3CD14 /* Debug */,
+				BED7830F1BC6AF5D00F3CD14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED783101BC6AF5D00F3CD14 /* Build configuration list for PBXNativeTarget "kata-roman-numeral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED783111BC6AF5D00F3CD14 /* Debug */,
+				BED783121BC6AF5D00F3CD14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED783131BC6AF5D00F3CD14 /* Build configuration list for PBXNativeTarget "kata-roman-numeralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED783141BC6AF5D00F3CD14 /* Debug */,
+				BED783151BC6AF5D00F3CD14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BED782EB1BC6AF5D00F3CD14 /* Project object */;
+}
