@@ -26,11 +26,29 @@ enum Position: Int {
     }
 }
 
-class ConvertToRomanInteractor {
+struct ConvertToRomanInteractorRequest {
+    let romanString: String
+}
+
+struct ConvertToRomanInteractorResponse {
+    let arabicString: String
+}
+
+class ConvertToRomanInteractor : BaseInteractor<ConvertToRomanInteractorRequest, ConvertToRomanInteractorResponse> {
+    
+// MARK:- Command interface
+    
+    override func execute(request: ConvertToRomanInteractorRequest) throws -> ConvertToRomanInteractorResponse? {
+        let responseString = convert(request.romanString)
+        return ConvertToRomanInteractorResponse(arabicString: responseString)
+    }
+    
+// MARK:- Public
     
     var currentPosition: Position = .Ones
     
     func convert(arabic: String) -> String {
+        
         currentPosition = .Ones
         var roman = ""
         
@@ -42,6 +60,8 @@ class ConvertToRomanInteractor {
         
         return roman
     }
+
+// MARK:- Private
     
     private func convertDigit(digit: Int) -> String {
         var digitString = ""
@@ -104,4 +124,3 @@ class ConvertToRomanInteractor {
         }
     }
 }
-
