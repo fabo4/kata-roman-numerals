@@ -14,38 +14,38 @@ class ConvertToRomanInteractorTestCase: XCTestCase {
     let converter = ConvertToRomanInteractor()
     
     func testOne() {
-        XCTAssertEqual(converter.convert("1"), "I")
+        XCTAssertEqual(try! converter.convert("1"), "I")
     }
     
     func testTwo() {
-        XCTAssertEqual(converter.convert("2"), "II")
+        XCTAssertEqual(try! converter.convert("2"), "II")
     }
     
     func testFour() {
-        XCTAssertEqual(converter.convert("4"), "IV")
+        XCTAssertEqual(try! converter.convert("4"), "IV")
     }
     
     func testFive() {
-        XCTAssertEqual(converter.convert("5"), "V")
+        XCTAssertEqual(try! converter.convert("5"), "V")
     }
     
     func testSeven() {
-        XCTAssertEqual(converter.convert("7"), "VII")
+        XCTAssertEqual(try! converter.convert("7"), "VII")
     }
     
     func testNine() {
-        XCTAssertEqual(converter.convert("9"), "IX")
+        XCTAssertEqual(try! converter.convert("9"), "IX")
     }
     
     func testTen() {
-        XCTAssertEqual(converter.convert("10"), "X")
+        XCTAssertEqual(try! converter.convert("10"), "X")
     }
     
     func testNineteenNinetyNine() {
-        XCTAssertEqual(converter.convert("1999"), "MCMXCIX")
+        XCTAssertEqual(try! converter.convert("1999"), "MCMXCIX")
     }
     
     func testTwoThousandAndFive() {
-        XCTAssertEqual(converter.convert("2005"), "MMV")
+        XCTAssertEqual(try! converter.convert("2005"), "MMV")
     }
 }

@@ -6,4 +6,4 @@ This is a test project to practise
 - TDD
 - Swift
 - Clean architecture
-- Design patterns
+- Design patterns (Command)

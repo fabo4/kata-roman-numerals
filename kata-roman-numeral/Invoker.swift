@@ -6,26 +6,27 @@
 //  Copyright © 2015 Ondrej Fabian. All rights reserved.
 //
 
-import Foundation
+protocol Command {
+    func execute() throws -> Any?
+    func complete(response: Any?, error: ErrorType?) -> Void
+}
+
+protocol Executor {
+    func executeCommand(command: Command)
+}
 
 class Invoker {
     
-    func executeCommand<T, U>(interactor: BaseInteractor<T, U>,  request: T, completion: (response: U?, error: ErrorType?) -> Void ) {
+    let executor: Executor
+    
+    init(executor: Executor) {
+        self.executor = executor
+    }
+    
+    func enqueueCommand(command: Command) {
         
-        dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) { () -> Void in
-            
-            let response: U?
-            let error: ErrorType?
-            do {
-                response = try interactor.execute(request)
-                error = nil
-            } catch let e {
-                response = nil
-                error = e
-            }
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                completion(response: response, error: error)
-            })
-        }
+        // Log, queue, whatever...
+        print(command)
+        executor.executeCommand(command)
     }
 }

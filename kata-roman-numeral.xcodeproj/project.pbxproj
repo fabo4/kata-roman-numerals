@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BE2F7C4D1BD13BA80020F2DA /* ConvertToRomanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F7C4C1BD13BA80020F2DA /* ConvertToRomanInteractor.swift */; settings = {ASSET_TAGS = (); }; };
-		BE8D06AF1BD7EEAF002C438C /* InvokerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D06AE1BD7EEAF002C438C /* InvokerTestCase.swift */; settings = {ASSET_TAGS = (); }; };
+		BE85CEA61BE7B69D00D383C9 /* ConvertToRomanCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE85CEA51BE7B69D00D383C9 /* ConvertToRomanCommand.swift */; settings = {ASSET_TAGS = (); }; };
+		BE8D06AF1BD7EEAF002C438C /* InvokerCommandTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D06AE1BD7EEAF002C438C /* InvokerCommandTestCase.swift */; settings = {ASSET_TAGS = (); }; };
 		BEAF58521BD5439C00FBD472 /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF58511BD5439C00FBD472 /* Invoker.swift */; settings = {ASSET_TAGS = (); }; };
-		BEAF58541BD556BC00FBD472 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF58531BD556BC00FBD472 /* BaseInteractor.swift */; settings = {ASSET_TAGS = (); }; };
+		BEAF58541BD556BC00FBD472 /* BaseCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF58531BD556BC00FBD472 /* BaseCommand.swift */; settings = {ASSET_TAGS = (); }; };
+		BEB391DB1BEBA85300D2C603 /* BackgroundExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB391DA1BEBA85300D2C603 /* BackgroundExecutor.swift */; settings = {ASSET_TAGS = (); }; };
 		BED782F71BC6AF5D00F3CD14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */; };
 		BED782F91BC6AF5D00F3CD14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED782F81BC6AF5D00F3CD14 /* ViewController.swift */; };
 		BED782FC1BC6AF5D00F3CD14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED782FA1BC6AF5D00F3CD14 /* Main.storyboard */; };
@@ -31,9 +33,11 @@
 
 /* Begin PBXFileReference section */
 		BE2F7C4C1BD13BA80020F2DA /* ConvertToRomanInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToRomanInteractor.swift; sourceTree = "<group>"; };
-		BE8D06AE1BD7EEAF002C438C /* InvokerTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvokerTestCase.swift; sourceTree = "<group>"; };
+		BE85CEA51BE7B69D00D383C9 /* ConvertToRomanCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToRomanCommand.swift; sourceTree = "<group>"; };
+		BE8D06AE1BD7EEAF002C438C /* InvokerCommandTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvokerCommandTestCase.swift; sourceTree = "<group>"; };
 		BEAF58511BD5439C00FBD472 /* Invoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invoker.swift; sourceTree = "<group>"; };
-		BEAF58531BD556BC00FBD472 /* BaseInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		BEAF58531BD556BC00FBD472 /* BaseCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCommand.swift; sourceTree = "<group>"; };
+		BEB391DA1BEBA85300D2C603 /* BackgroundExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundExecutor.swift; sourceTree = "<group>"; };
 		BED782F31BC6AF5D00F3CD14 /* kata-roman-numeral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kata-roman-numeral.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BED782F81BC6AF5D00F3CD14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,8 +71,8 @@
 		BE2F7C4E1BD13BAE0020F2DA /* Convert To Roman */ = {
 			isa = PBXGroup;
 			children = (
-				BEAF58531BD556BC00FBD472 /* BaseInteractor.swift */,
 				BE2F7C4C1BD13BA80020F2DA /* ConvertToRomanInteractor.swift */,
+				BE85CEA51BE7B69D00D383C9 /* ConvertToRomanCommand.swift */,
 			);
 			name = "Convert To Roman";
 			sourceTree = "<group>";
@@ -77,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				BEAF58511BD5439C00FBD472 /* Invoker.swift */,
+				BEAF58531BD556BC00FBD472 /* BaseCommand.swift */,
+				BEB391DA1BEBA85300D2C603 /* BackgroundExecutor.swift */,
 			);
 			name = Invoker;
 			sourceTree = "<group>";
@@ -126,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				BED7830B1BC6AF5D00F3CD14 /* ConvertToRomanInteractorTestCase.swift */,
-				BE8D06AE1BD7EEAF002C438C /* InvokerTestCase.swift */,
+				BE8D06AE1BD7EEAF002C438C /* InvokerCommandTestCase.swift */,
 				BED7830D1BC6AF5D00F3CD14 /* Info.plist */,
 			);
 			path = "kata-roman-numeralTests";
@@ -232,11 +238,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE85CEA61BE7B69D00D383C9 /* ConvertToRomanCommand.swift in Sources */,
 				BE2F7C4D1BD13BA80020F2DA /* ConvertToRomanInteractor.swift in Sources */,
-				BEAF58541BD556BC00FBD472 /* BaseInteractor.swift in Sources */,
+				BEAF58541BD556BC00FBD472 /* BaseCommand.swift in Sources */,
 				BED782F91BC6AF5D00F3CD14 /* ViewController.swift in Sources */,
 				BED782F71BC6AF5D00F3CD14 /* AppDelegate.swift in Sources */,
 				BEAF58521BD5439C00FBD472 /* Invoker.swift in Sources */,
+				BEB391DB1BEBA85300D2C603 /* BackgroundExecutor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE8D06AF1BD7EEAF002C438C /* InvokerTestCase.swift in Sources */,
+				BE8D06AF1BD7EEAF002C438C /* InvokerCommandTestCase.swift in Sources */,
 				BED7830C1BC6AF5D00F3CD14 /* ConvertToRomanInteractorTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
