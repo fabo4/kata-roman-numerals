@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import kata_roman_numeral
+@testable import domain
 
 class ConvertToRomanInteractorTestCase: XCTestCase {
     

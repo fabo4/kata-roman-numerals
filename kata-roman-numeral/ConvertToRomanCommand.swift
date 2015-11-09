@@ -21,6 +21,6 @@ class ConvertToRomanCommand: BaseCommand<ConvertToRomanInteractor, String, Strin
 extension ConvertToRomanInteractor {
     func convert(request: String, completion: ConverterToRomanCompletion) -> Void {
         let command = ConvertToRomanCommand(receiver: self, request: request, completion: completion)
-        Invoker(executor: BackgroundExecutor()).enqueueCommand(command)
+//        Invoker(executor: BackgroundExecutor()).enqueueCommand(command)
     }
 }

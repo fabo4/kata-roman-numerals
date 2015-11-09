@@ -6,16 +6,11 @@
 //  Copyright © 2015 Ondrej Fabian. All rights reserved.
 //
 
-protocol Command {
-    func execute() throws -> Any?
-    func complete(response: Any?, error: ErrorType?) -> Void
+protocol Invoker {
+   func enqueueCommand(command: Command)
 }
 
-protocol Executor {
-    func executeCommand(command: Command)
-}
-
-class Invoker {
+class LoggingInvoker: Invoker {
     
     let executor: Executor
     

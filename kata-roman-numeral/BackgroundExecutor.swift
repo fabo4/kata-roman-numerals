@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import domain
 
-class BackgroundExecutor : Executor {
+class BackgroundExecutor: Executor {
     
     func executeCommand(command: Command) {
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) { () -> Void in
