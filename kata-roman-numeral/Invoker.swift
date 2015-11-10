@@ -6,11 +6,7 @@
 //  Copyright © 2015 Ondrej Fabian. All rights reserved.
 //
 
-protocol Invoker {
-   func enqueueCommand(command: Command)
-}
-
-class LoggingInvoker: Invoker {
+class Invoker {
     
     let executor: Executor
     
@@ -19,9 +15,19 @@ class LoggingInvoker: Invoker {
     }
     
     func enqueueCommand(command: Command) {
-        
-        // Log, queue, whatever...
-        print(command)
         executor.executeCommand(command)
+    }
+}
+
+
+class LoggingInvoker: Invoker {
+    
+//    let logger: Logger
+    
+    override func enqueueCommand(command: Command) {
+        
+        print(command)
+        
+        super.enqueueCommand(command)
     }
 }

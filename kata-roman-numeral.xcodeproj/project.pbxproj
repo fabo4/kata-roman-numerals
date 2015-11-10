@@ -25,7 +25,10 @@
 		BEE5A19C1BF0EBCB00131875 /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A19B1BF0EBCB00131875 /* Executor.swift */; };
 		BEE5A1A61BF0FBB800131875 /* BackgroundExecutorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A1A51BF0FBB800131875 /* BackgroundExecutorTestCase.swift */; };
 		BEE5A1A91BF0FBCA00131875 /* ConvertToRomanInteractorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A1A71BF0FBCA00131875 /* ConvertToRomanInteractorTestCase.swift */; };
-		BEE5A1AA1BF0FBCA00131875 /* InvokerCommandTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A1A81BF0FBCA00131875 /* InvokerCommandTestCase.swift */; };
+		BEE5A1AA1BF0FBCA00131875 /* InvokerCommandFacadeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A1A81BF0FBCA00131875 /* InvokerCommandFacadeTestCase.swift */; };
+		BEFF40FC1BF23F650025130E /* ConvertToRomanFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF40FB1BF23F650025130E /* ConvertToRomanFacade.swift */; };
+		BEFF40FF1BF248C70025130E /* BaseFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF40FD1BF248BC0025130E /* BaseFacade.swift */; };
+		BEFF41011BF24E0D0025130E /* TestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41001BF24E0D0025130E /* TestExecutor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +92,10 @@
 		BEE5A19B1BF0EBCB00131875 /* Executor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Executor.swift; sourceTree = "<group>"; };
 		BEE5A1A51BF0FBB800131875 /* BackgroundExecutorTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundExecutorTestCase.swift; path = "kata-roman-numeralTests/BackgroundExecutorTestCase.swift"; sourceTree = "<group>"; };
 		BEE5A1A71BF0FBCA00131875 /* ConvertToRomanInteractorTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToRomanInteractorTestCase.swift; sourceTree = "<group>"; };
-		BEE5A1A81BF0FBCA00131875 /* InvokerCommandTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvokerCommandTestCase.swift; sourceTree = "<group>"; };
+		BEE5A1A81BF0FBCA00131875 /* InvokerCommandFacadeTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvokerCommandFacadeTestCase.swift; sourceTree = "<group>"; };
+		BEFF40FB1BF23F650025130E /* ConvertToRomanFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToRomanFacade.swift; sourceTree = "<group>"; };
+		BEFF40FD1BF248BC0025130E /* BaseFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFacade.swift; sourceTree = "<group>"; };
+		BEFF41001BF24E0D0025130E /* TestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestExecutor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 			children = (
 				BE2F7C4C1BD13BA80020F2DA /* ConvertToRomanInteractor.swift */,
 				BE85CEA51BE7B69D00D383C9 /* ConvertToRomanCommand.swift */,
+				BEFF40FB1BF23F650025130E /* ConvertToRomanFacade.swift */,
 			);
 			name = "Convert To Roman";
 			sourceTree = "<group>";
@@ -140,9 +147,10 @@
 			children = (
 				BEE5A1981BF0EB7300131875 /* Infrastructure */,
 				BEE5A19D1BF0EBFD00131875 /* Dependency */,
-				BEAF58511BD5439C00FBD472 /* Invoker.swift */,
-				BEE5A1991BF0EBA800131875 /* Command.swift */,
 				BEAF58531BD556BC00FBD472 /* BaseCommand.swift */,
+				BEFF40FD1BF248BC0025130E /* BaseFacade.swift */,
+				BEE5A1991BF0EBA800131875 /* Command.swift */,
+				BEAF58511BD5439C00FBD472 /* Invoker.swift */,
 			);
 			name = Invoker;
 			sourceTree = "<group>";
@@ -204,8 +212,9 @@
 		BEE5A1821BF0E75C00131875 /* domainTests */ = {
 			isa = PBXGroup;
 			children = (
+				BEFF41021BF24FB40025130E /* Dependecy Mock */,
 				BEE5A1A71BF0FBCA00131875 /* ConvertToRomanInteractorTestCase.swift */,
-				BEE5A1A81BF0FBCA00131875 /* InvokerCommandTestCase.swift */,
+				BEE5A1A81BF0FBCA00131875 /* InvokerCommandFacadeTestCase.swift */,
 				BEE5A1851BF0E75C00131875 /* Info.plist */,
 			);
 			path = domainTests;
@@ -233,6 +242,14 @@
 				BEE5A1A51BF0FBB800131875 /* BackgroundExecutorTestCase.swift */,
 			);
 			name = "kata-roman-numeralTests";
+			sourceTree = "<group>";
+		};
+		BEFF41021BF24FB40025130E /* Dependecy Mock */ = {
+			isa = PBXGroup;
+			children = (
+				BEFF41001BF24E0D0025130E /* TestExecutor.swift */,
+			);
+			name = "Dependecy Mock";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,7 +446,9 @@
 				BEE5A1921BF0E78D00131875 /* ConvertToRomanInteractor.swift in Sources */,
 				BEE5A1911BF0E78500131875 /* BaseCommand.swift in Sources */,
 				BEE5A1931BF0E79200131875 /* ConvertToRomanCommand.swift in Sources */,
+				BEFF40FF1BF248C70025130E /* BaseFacade.swift in Sources */,
 				BEE5A19A1BF0EBA800131875 /* Command.swift in Sources */,
+				BEFF40FC1BF23F650025130E /* ConvertToRomanFacade.swift in Sources */,
 				BEE5A19C1BF0EBCB00131875 /* Executor.swift in Sources */,
 				BEE5A1901BF0E77F00131875 /* Invoker.swift in Sources */,
 			);
@@ -439,8 +458,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE5A1AA1BF0FBCA00131875 /* InvokerCommandTestCase.swift in Sources */,
+				BEE5A1AA1BF0FBCA00131875 /* InvokerCommandFacadeTestCase.swift in Sources */,
 				BEE5A1A91BF0FBCA00131875 /* ConvertToRomanInteractorTestCase.swift in Sources */,
+				BEFF41011BF24E0D0025130E /* TestExecutor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,6 +736,7 @@
 				BEE5A18C1BF0E75C00131875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEE5A18D1BF0E75C00131875 /* Build configuration list for PBXNativeTarget "domainTests" */ = {
 			isa = XCConfigurationList;
@@ -724,6 +745,7 @@
 				BEE5A18F1BF0E75C00131875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

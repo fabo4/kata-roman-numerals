@@ -26,24 +26,33 @@ enum Position: Int {
     }
 }
 
+public struct ConvertToRomanRequest {
+    let arabic: String
+}
+
+public struct ConvertToRomanResponse {
+    let roman: String
+}
+
+
 class ConvertToRomanInteractor {
     
 // MARK:- Public
     
     var currentPosition: Position = .Ones
     
-    func convert(arabic: String) throws -> String {
+    func convert(request: ConvertToRomanRequest) throws -> ConvertToRomanResponse? {
         
         currentPosition = .Ones
         var roman = ""
         
-        for character in arabic.characters.reverse() {
+        for character in request.arabic.characters.reverse() {
             let digit = Int(String(character))!
             roman = convertDigit(digit) + roman
             currentPosition = currentPosition.getHigherPosition()
         }
         
-        return roman
+        return ConvertToRomanResponse(roman: roman)
     }
 
 // MARK:- Private
