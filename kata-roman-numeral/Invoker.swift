@@ -19,15 +19,17 @@ class Invoker {
     }
 }
 
-
 class LoggingInvoker: Invoker {
     
-//    let logger: Logger
+    let logger: Logger
+    
+    init(executor: Executor, logger: Logger) {
+        self.logger = logger
+        super.init(executor: executor)
+    }
     
     override func enqueueCommand(command: Command) {
-        
-        print(command)
-        
+        logger.log(LogLevel.Info, message: String(command))
         super.enqueueCommand(command)
     }
 }
