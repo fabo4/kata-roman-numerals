@@ -16,9 +16,9 @@ class ConsoleLoggerTestCase: XCTestCase {
         
         let logger = ConsoleLogger()
         
-//        let command = ConvertToRomanCommand(receiver: ConvertToRomanInteractor(), request: ConvertToRomanRequest(arabic: "123"), completion: { (response, error) -> Void in
-//            
-//            })
-//        logger.log(LogLevel.Info, message: String(command))
+        let command = ConvertToRomanCommand(receiver: ConvertToRomanInteractor(), request: ConvertToRomanRequest(arabic: "123"), completion: { (response, error) -> Void in
+            
+            })
+        logger.log(LogLevel.Info, message: String(command))
     }
 }

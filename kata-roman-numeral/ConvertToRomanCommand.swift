@@ -16,4 +16,11 @@ class ConvertToRomanCommand: BaseCommand<ConvertToRomanInteractor, ConvertToRoma
     override init(receiver: ConvertToRomanInteractor, request: ConvertToRomanRequest, completion: ConverterToRomanCompletion) {
         super.init(receiver: receiver, request: request, completion: completion)
     }
+    
+}
+
+extension ConvertToRomanCommand: CustomStringConvertible {
+    var description: String {
+        return "ConvertToRoman, \(String(request)))"
+    }
 }
