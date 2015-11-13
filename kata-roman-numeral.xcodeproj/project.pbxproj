@@ -13,10 +13,8 @@
 		BE6960B01BF392400085FE07 /* presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE69609B1BF3923F0085FE07 /* presentation.framework */; };
 		BE6960B11BF392400085FE07 /* presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE69609B1BF3923F0085FE07 /* presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE6960B81BF3929D0085FE07 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE5A1731BF0E75C00131875 /* domain.framework */; };
-		BE6960BC1BF3940D0085FE07 /* RomanConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6960BB1BF3940D0085FE07 /* RomanConverterPresenter.swift */; };
 		BEB391DB1BEBA85300D2C603 /* BackgroundExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB391DA1BEBA85300D2C603 /* BackgroundExecutor.swift */; };
 		BECF93291BF4E06200084E6C /* TestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41001BF24E0D0025130E /* TestExecutor.swift */; };
-		BECF932C1BF4E92200084E6C /* LoggingInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF932B1BF4E92200084E6C /* LoggingInvoker.swift */; };
 		BED782F71BC6AF5D00F3CD14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */; };
 		BED782F91BC6AF5D00F3CD14 /* RomanConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED782F81BC6AF5D00F3CD14 /* RomanConverterViewController.swift */; };
 		BED782FC1BC6AF5D00F3CD14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED782FA1BC6AF5D00F3CD14 /* Main.storyboard */; };
@@ -25,21 +23,23 @@
 		BEE5A1761BF0E75C00131875 /* domain.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE5A1751BF0E75C00131875 /* domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEE5A17D1BF0E75C00131875 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE5A1731BF0E75C00131875 /* domain.framework */; };
 		BEE5A1891BF0E75C00131875 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEE5A1731BF0E75C00131875 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BEE5A1901BF0E77F00131875 /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF58511BD5439C00FBD472 /* Invoker.swift */; };
-		BEE5A1911BF0E78500131875 /* BaseCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF58531BD556BC00FBD472 /* BaseCommand.swift */; };
-		BEE5A1921BF0E78D00131875 /* ConvertToRomanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F7C4C1BD13BA80020F2DA /* ConvertToRomanInteractor.swift */; };
-		BEE5A1931BF0E79200131875 /* ConvertToRomanCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE85CEA51BE7B69D00D383C9 /* ConvertToRomanCommand.swift */; };
-		BEE5A19A1BF0EBA800131875 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A1991BF0EBA800131875 /* Command.swift */; };
-		BEE5A19C1BF0EBCB00131875 /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A19B1BF0EBCB00131875 /* Executor.swift */; };
 		BEE5A1A61BF0FBB800131875 /* BackgroundExecutorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A1A51BF0FBB800131875 /* BackgroundExecutorTestCase.swift */; };
 		BEE5A1A91BF0FBCA00131875 /* ConvertToRomanInteractorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A1A71BF0FBCA00131875 /* ConvertToRomanInteractorTestCase.swift */; };
 		BEE5A1AA1BF0FBCA00131875 /* InvokerCommandFacadeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A1A81BF0FBCA00131875 /* InvokerCommandFacadeTestCase.swift */; };
-		BEFF40FC1BF23F650025130E /* ConvertToRomanFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF40FB1BF23F650025130E /* ConvertToRomanFacade.swift */; };
-		BEFF40FF1BF248C70025130E /* BaseFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF40FD1BF248BC0025130E /* BaseFacade.swift */; };
+		BEEE4F221BF640390097E8D2 /* ConsoleLoggerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F211BF640390097E8D2 /* ConsoleLoggerTestCase.swift */; };
+		BEEE4F261BF640840097E8D2 /* ConvertToRomanCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F231BF640840097E8D2 /* ConvertToRomanCommand.swift */; };
+		BEEE4F271BF640840097E8D2 /* ConvertToRomanFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F241BF640840097E8D2 /* ConvertToRomanFacade.swift */; };
+		BEEE4F281BF640840097E8D2 /* ConvertToRomanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F251BF640840097E8D2 /* ConvertToRomanInteractor.swift */; };
+		BEEE4F2A1BF640D90097E8D2 /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F291BF640D90097E8D2 /* Executor.swift */; };
+		BEEE4F2C1BF640E70097E8D2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F2B1BF640E70097E8D2 /* Logger.swift */; };
+		BEEE4F321BF641210097E8D2 /* BaseCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F2D1BF641210097E8D2 /* BaseCommand.swift */; };
+		BEEE4F331BF641210097E8D2 /* BaseFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F2E1BF641210097E8D2 /* BaseFacade.swift */; };
+		BEEE4F341BF641210097E8D2 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F2F1BF641210097E8D2 /* Command.swift */; };
+		BEEE4F351BF641210097E8D2 /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F301BF641210097E8D2 /* Invoker.swift */; };
+		BEEE4F361BF641210097E8D2 /* LoggingInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */; };
+		BEEE4F381BF6417D0097E8D2 /* RomanConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */; };
 		BEFF41011BF24E0D0025130E /* TestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41001BF24E0D0025130E /* TestExecutor.swift */; };
-		BEFF41051BF265060025130E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41041BF265060025130E /* Logger.swift */; };
 		BEFF41081BF2654B0025130E /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41071BF2654B0025130E /* ConsoleLogger.swift */; };
-		BEFF410B1BF27CAD0025130E /* ConsoleLoggerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41091BF27C4D0025130E /* ConsoleLoggerTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,19 +103,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BE2F7C4C1BD13BA80020F2DA /* ConvertToRomanInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToRomanInteractor.swift; sourceTree = "<group>"; };
 		BE69609B1BF3923F0085FE07 /* presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE69609D1BF392400085FE07 /* presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = presentation.h; sourceTree = "<group>"; };
 		BE69609F1BF392400085FE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE6960A41BF392400085FE07 /* presentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = presentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6960AB1BF392400085FE07 /* presentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentationTests.swift; sourceTree = "<group>"; };
 		BE6960AD1BF392400085FE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE6960BB1BF3940D0085FE07 /* RomanConverterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RomanConverterPresenter.swift; sourceTree = "<group>"; };
-		BE85CEA51BE7B69D00D383C9 /* ConvertToRomanCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToRomanCommand.swift; sourceTree = "<group>"; };
-		BEAF58511BD5439C00FBD472 /* Invoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invoker.swift; sourceTree = "<group>"; };
-		BEAF58531BD556BC00FBD472 /* BaseCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCommand.swift; sourceTree = "<group>"; };
 		BEB391DA1BEBA85300D2C603 /* BackgroundExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundExecutor.swift; sourceTree = "<group>"; };
-		BECF932B1BF4E92200084E6C /* LoggingInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingInvoker.swift; sourceTree = "<group>"; };
 		BED782F31BC6AF5D00F3CD14 /* kata-roman-numeral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kata-roman-numeral.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BED782F81BC6AF5D00F3CD14 /* RomanConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanConverterViewController.swift; sourceTree = "<group>"; };
@@ -129,17 +123,23 @@
 		BEE5A1771BF0E75C00131875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEE5A17C1BF0E75C00131875 /* domainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE5A1851BF0E75C00131875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEE5A1991BF0EBA800131875 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
-		BEE5A19B1BF0EBCB00131875 /* Executor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Executor.swift; sourceTree = "<group>"; };
 		BEE5A1A51BF0FBB800131875 /* BackgroundExecutorTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundExecutorTestCase.swift; path = "kata-roman-numeralTests/BackgroundExecutorTestCase.swift"; sourceTree = "<group>"; };
 		BEE5A1A71BF0FBCA00131875 /* ConvertToRomanInteractorTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToRomanInteractorTestCase.swift; sourceTree = "<group>"; };
 		BEE5A1A81BF0FBCA00131875 /* InvokerCommandFacadeTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvokerCommandFacadeTestCase.swift; sourceTree = "<group>"; };
-		BEFF40FB1BF23F650025130E /* ConvertToRomanFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToRomanFacade.swift; sourceTree = "<group>"; };
-		BEFF40FD1BF248BC0025130E /* BaseFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFacade.swift; sourceTree = "<group>"; };
+		BEEE4F211BF640390097E8D2 /* ConsoleLoggerTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsoleLoggerTestCase.swift; path = "kata-roman-numeralTests/ConsoleLoggerTestCase.swift"; sourceTree = "<group>"; };
+		BEEE4F231BF640840097E8D2 /* ConvertToRomanCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConvertToRomanCommand.swift; path = domain/ConvertToRomanCommand.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F241BF640840097E8D2 /* ConvertToRomanFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConvertToRomanFacade.swift; path = domain/ConvertToRomanFacade.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F251BF640840097E8D2 /* ConvertToRomanInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConvertToRomanInteractor.swift; path = domain/ConvertToRomanInteractor.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F291BF640D90097E8D2 /* Executor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Executor.swift; path = domain/Executor.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F2B1BF640E70097E8D2 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = domain/Logger.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F2D1BF641210097E8D2 /* BaseCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseCommand.swift; path = domain/BaseCommand.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F2E1BF641210097E8D2 /* BaseFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseFacade.swift; path = domain/BaseFacade.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F2F1BF641210097E8D2 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Command.swift; path = domain/Command.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F301BF641210097E8D2 /* Invoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Invoker.swift; path = domain/Invoker.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggingInvoker.swift; path = domain/LoggingInvoker.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RomanConverterPresenter.swift; path = presentation/RomanConverterPresenter.swift; sourceTree = SOURCE_ROOT; };
 		BEFF41001BF24E0D0025130E /* TestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestExecutor.swift; sourceTree = "<group>"; };
-		BEFF41041BF265060025130E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		BEFF41071BF2654B0025130E /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
-		BEFF41091BF27C4D0025130E /* ConsoleLoggerTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLoggerTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,7 +232,7 @@
 		BE6960BD1BF394140085FE07 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				BE6960BB1BF3940D0085FE07 /* RomanConverterPresenter.swift */,
+				BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */,
 			);
 			name = Presentation;
 			sourceTree = "<group>";
@@ -242,11 +242,11 @@
 			children = (
 				BEE5A1981BF0EB7300131875 /* Infrastructure */,
 				BEE5A19D1BF0EBFD00131875 /* Dependency */,
-				BEAF58531BD556BC00FBD472 /* BaseCommand.swift */,
-				BEFF40FD1BF248BC0025130E /* BaseFacade.swift */,
-				BEE5A1991BF0EBA800131875 /* Command.swift */,
-				BEAF58511BD5439C00FBD472 /* Invoker.swift */,
-				BECF932B1BF4E92200084E6C /* LoggingInvoker.swift */,
+				BEEE4F2D1BF641210097E8D2 /* BaseCommand.swift */,
+				BEEE4F2E1BF641210097E8D2 /* BaseFacade.swift */,
+				BEEE4F2F1BF641210097E8D2 /* Command.swift */,
+				BEEE4F301BF641210097E8D2 /* Invoker.swift */,
+				BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */,
 			);
 			name = Invoker;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 		BEE5A19D1BF0EBFD00131875 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
-				BEE5A19B1BF0EBCB00131875 /* Executor.swift */,
+				BEEE4F291BF640D90097E8D2 /* Executor.swift */,
 			);
 			name = Dependency;
 			sourceTree = "<group>";
@@ -347,7 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				BEE5A1A51BF0FBB800131875 /* BackgroundExecutorTestCase.swift */,
-				BEFF41091BF27C4D0025130E /* ConsoleLoggerTestCase.swift */,
+				BEEE4F211BF640390097E8D2 /* ConsoleLoggerTestCase.swift */,
 			);
 			name = "kata-roman-numeralTests";
 			sourceTree = "<group>";
@@ -355,9 +355,9 @@
 		BEEE4F201BF62BE80097E8D2 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				BE2F7C4C1BD13BA80020F2DA /* ConvertToRomanInteractor.swift */,
-				BE85CEA51BE7B69D00D383C9 /* ConvertToRomanCommand.swift */,
-				BEFF40FB1BF23F650025130E /* ConvertToRomanFacade.swift */,
+				BEEE4F231BF640840097E8D2 /* ConvertToRomanCommand.swift */,
+				BEEE4F241BF640840097E8D2 /* ConvertToRomanFacade.swift */,
+				BEEE4F251BF640840097E8D2 /* ConvertToRomanInteractor.swift */,
 			);
 			name = Domain;
 			sourceTree = "<group>";
@@ -374,7 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				BEFF41061BF265340025130E /* Infrastructure */,
-				BEFF41041BF265060025130E /* Logger.swift */,
+				BEEE4F2B1BF640E70097E8D2 /* Logger.swift */,
 			);
 			name = Logger;
 			sourceTree = "<group>";
@@ -629,7 +629,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE6960BC1BF3940D0085FE07 /* RomanConverterPresenter.swift in Sources */,
+				BEEE4F381BF6417D0097E8D2 /* RomanConverterPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +658,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEE5A1A61BF0FBB800131875 /* BackgroundExecutorTestCase.swift in Sources */,
-				BEFF410B1BF27CAD0025130E /* ConsoleLoggerTestCase.swift in Sources */,
+				BEEE4F221BF640390097E8D2 /* ConsoleLoggerTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,16 +666,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE5A1921BF0E78D00131875 /* ConvertToRomanInteractor.swift in Sources */,
-				BEE5A1911BF0E78500131875 /* BaseCommand.swift in Sources */,
-				BEE5A1931BF0E79200131875 /* ConvertToRomanCommand.swift in Sources */,
-				BEFF40FF1BF248C70025130E /* BaseFacade.swift in Sources */,
-				BEFF41051BF265060025130E /* Logger.swift in Sources */,
-				BEE5A19A1BF0EBA800131875 /* Command.swift in Sources */,
-				BECF932C1BF4E92200084E6C /* LoggingInvoker.swift in Sources */,
-				BEFF40FC1BF23F650025130E /* ConvertToRomanFacade.swift in Sources */,
-				BEE5A19C1BF0EBCB00131875 /* Executor.swift in Sources */,
-				BEE5A1901BF0E77F00131875 /* Invoker.swift in Sources */,
+				BEEE4F351BF641210097E8D2 /* Invoker.swift in Sources */,
+				BEEE4F361BF641210097E8D2 /* LoggingInvoker.swift in Sources */,
+				BEEE4F281BF640840097E8D2 /* ConvertToRomanInteractor.swift in Sources */,
+				BEEE4F2C1BF640E70097E8D2 /* Logger.swift in Sources */,
+				BEEE4F2A1BF640D90097E8D2 /* Executor.swift in Sources */,
+				BEEE4F321BF641210097E8D2 /* BaseCommand.swift in Sources */,
+				BEEE4F341BF641210097E8D2 /* Command.swift in Sources */,
+				BEEE4F331BF641210097E8D2 /* BaseFacade.swift in Sources */,
+				BEEE4F261BF640840097E8D2 /* ConvertToRomanCommand.swift in Sources */,
+				BEEE4F271BF640840097E8D2 /* ConvertToRomanFacade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,9 @@ class RomanConverterViewController: UIViewController, RomanConverterView, UIText
     @IBOutlet weak var romanLabel: UILabel!
     
     lazy var presenter: ConvertToRomanPresenter = {
-        let invoker = LoggingInvoker(executor: BackgroundExecutor(), logger: ConsoleLogger())
+        let executor = BackgroundExecutor()
+        let logger = ConsoleLogger()
+        let invoker = LoggingInvoker(executor: executor, logger: logger)
         let converter = ConverToRomanFacade(invoker: invoker)
         return ConvertToRomanPresenter(romanConverter: converter, view: self)
     }()
@@ -33,6 +35,5 @@ class RomanConverterViewController: UIViewController, RomanConverterView, UIText
     func showRoman(roman: String) {
         romanLabel.text = "Roman: \(roman)"
     }
-
 }
 
