@@ -6,30 +6,15 @@
 //  Copyright © 2015 Ondrej Fabian. All rights reserved.
 //
 
-class Invoker {
+public class Invoker {
     
     let executor: Executor
     
-    init(executor: Executor) {
+    public init(executor: Executor) {
         self.executor = executor
     }
     
     func enqueueCommand(command: Command) {
         executor.executeCommand(command)
-    }
-}
-
-class LoggingInvoker: Invoker {
-    
-    let logger: Logger
-    
-    init(executor: Executor, logger: Logger) {
-        self.logger = logger
-        super.init(executor: executor)
-    }
-    
-    override func enqueueCommand(command: Command) {
-        logger.log(LogLevel.Info, message: String(command))
-        super.enqueueCommand(command)
     }
 }

@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE69609E1BF392400085FE07 /* presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = BE69609D1BF392400085FE07 /* presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE6960A51BF392400085FE07 /* presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE69609B1BF3923F0085FE07 /* presentation.framework */; };
+		BE6960AC1BF392400085FE07 /* presentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6960AB1BF392400085FE07 /* presentationTests.swift */; };
+		BE6960B01BF392400085FE07 /* presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE69609B1BF3923F0085FE07 /* presentation.framework */; };
+		BE6960B11BF392400085FE07 /* presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE69609B1BF3923F0085FE07 /* presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE6960B81BF3929D0085FE07 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE5A1731BF0E75C00131875 /* domain.framework */; };
+		BE6960BC1BF3940D0085FE07 /* RomanConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6960BB1BF3940D0085FE07 /* RomanConverterPresenter.swift */; };
 		BEB391DB1BEBA85300D2C603 /* BackgroundExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB391DA1BEBA85300D2C603 /* BackgroundExecutor.swift */; };
+		BECF93291BF4E06200084E6C /* TestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41001BF24E0D0025130E /* TestExecutor.swift */; };
+		BECF932C1BF4E92200084E6C /* LoggingInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF932B1BF4E92200084E6C /* LoggingInvoker.swift */; };
 		BED782F71BC6AF5D00F3CD14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */; };
-		BED782F91BC6AF5D00F3CD14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED782F81BC6AF5D00F3CD14 /* ViewController.swift */; };
+		BED782F91BC6AF5D00F3CD14 /* RomanConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED782F81BC6AF5D00F3CD14 /* RomanConverterViewController.swift */; };
 		BED782FC1BC6AF5D00F3CD14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED782FA1BC6AF5D00F3CD14 /* Main.storyboard */; };
 		BED782FE1BC6AF5D00F3CD14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED782FD1BC6AF5D00F3CD14 /* Assets.xcassets */; };
 		BED783011BC6AF5D00F3CD14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED782FF1BC6AF5D00F3CD14 /* LaunchScreen.storyboard */; };
 		BEE5A1761BF0E75C00131875 /* domain.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE5A1751BF0E75C00131875 /* domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEE5A17D1BF0E75C00131875 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE5A1731BF0E75C00131875 /* domain.framework */; };
-		BEE5A1881BF0E75C00131875 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE5A1731BF0E75C00131875 /* domain.framework */; };
 		BEE5A1891BF0E75C00131875 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEE5A1731BF0E75C00131875 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BEE5A1901BF0E77F00131875 /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF58511BD5439C00FBD472 /* Invoker.swift */; };
 		BEE5A1911BF0E78500131875 /* BaseCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF58531BD556BC00FBD472 /* BaseCommand.swift */; };
@@ -35,6 +43,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BE6960A61BF392400085FE07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED782EB1BC6AF5D00F3CD14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE69609A1BF3923F0085FE07;
+			remoteInfo = presentation;
+		};
+		BE6960A81BF392400085FE07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED782EB1BC6AF5D00F3CD14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED782F21BC6AF5D00F3CD14;
+			remoteInfo = "kata-roman-numeral";
+		};
+		BE6960AE1BF392400085FE07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED782EB1BC6AF5D00F3CD14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE69609A1BF3923F0085FE07;
+			remoteInfo = presentation;
+		};
+		BE6960B91BF392A20085FE07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED782EB1BC6AF5D00F3CD14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEE5A1721BF0E75C00131875;
+			remoteInfo = domain;
+		};
 		BED783081BC6AF5D00F3CD14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BED782EB1BC6AF5D00F3CD14 /* Project object */;
@@ -43,13 +79,6 @@
 			remoteInfo = "kata-roman-numeral";
 		};
 		BEE5A17E1BF0E75C00131875 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BED782EB1BC6AF5D00F3CD14 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEE5A1721BF0E75C00131875;
-			remoteInfo = domain;
-		};
-		BEE5A1861BF0E75C00131875 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BED782EB1BC6AF5D00F3CD14 /* Project object */;
 			proxyType = 1;
@@ -65,6 +94,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BE6960B11BF392400085FE07 /* presentation.framework in Embed Frameworks */,
 				BEE5A1891BF0E75C00131875 /* domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -74,13 +104,21 @@
 
 /* Begin PBXFileReference section */
 		BE2F7C4C1BD13BA80020F2DA /* ConvertToRomanInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToRomanInteractor.swift; sourceTree = "<group>"; };
+		BE69609B1BF3923F0085FE07 /* presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE69609D1BF392400085FE07 /* presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = presentation.h; sourceTree = "<group>"; };
+		BE69609F1BF392400085FE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6960A41BF392400085FE07 /* presentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = presentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6960AB1BF392400085FE07 /* presentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentationTests.swift; sourceTree = "<group>"; };
+		BE6960AD1BF392400085FE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6960BB1BF3940D0085FE07 /* RomanConverterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RomanConverterPresenter.swift; sourceTree = "<group>"; };
 		BE85CEA51BE7B69D00D383C9 /* ConvertToRomanCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToRomanCommand.swift; sourceTree = "<group>"; };
 		BEAF58511BD5439C00FBD472 /* Invoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invoker.swift; sourceTree = "<group>"; };
 		BEAF58531BD556BC00FBD472 /* BaseCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCommand.swift; sourceTree = "<group>"; };
 		BEB391DA1BEBA85300D2C603 /* BackgroundExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundExecutor.swift; sourceTree = "<group>"; };
+		BECF932B1BF4E92200084E6C /* LoggingInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingInvoker.swift; sourceTree = "<group>"; };
 		BED782F31BC6AF5D00F3CD14 /* kata-roman-numeral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kata-roman-numeral.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BED782F81BC6AF5D00F3CD14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BED782F81BC6AF5D00F3CD14 /* RomanConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanConverterViewController.swift; sourceTree = "<group>"; };
 		BED782FB1BC6AF5D00F3CD14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BED782FD1BC6AF5D00F3CD14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BED783001BC6AF5D00F3CD14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,11 +143,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE6960971BF3923F0085FE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6960B81BF3929D0085FE07 /* domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6960A11BF392400085FE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6960A51BF392400085FE07 /* presentation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BED782F01BC6AF5D00F3CD14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE5A1881BF0E75C00131875 /* domain.framework in Frameworks */,
+				BE6960B01BF392400085FE07 /* presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,11 +195,46 @@
 		BE2F7C4E1BD13BAE0020F2DA /* Convert To Roman */ = {
 			isa = PBXGroup;
 			children = (
-				BE2F7C4C1BD13BA80020F2DA /* ConvertToRomanInteractor.swift */,
-				BE85CEA51BE7B69D00D383C9 /* ConvertToRomanCommand.swift */,
-				BEFF40FB1BF23F650025130E /* ConvertToRomanFacade.swift */,
+				BECF932A1BF4E2DC00084E6C /* View */,
+				BE6960BD1BF394140085FE07 /* Presentation */,
+				BEEE4F201BF62BE80097E8D2 /* Domain */,
 			);
 			name = "Convert To Roman";
+			sourceTree = "<group>";
+		};
+		BE6960951BF3912D0085FE07 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BEFF41031BF2549A0025130E /* Logger */,
+				BEAF58501BD5426D00FBD472 /* Invoker */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		BE69609C1BF392400085FE07 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BE69609D1BF392400085FE07 /* presentation.h */,
+				BE69609F1BF392400085FE07 /* Info.plist */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		BE6960AA1BF392400085FE07 /* presentationTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE6960AB1BF392400085FE07 /* presentationTests.swift */,
+				BE6960AD1BF392400085FE07 /* Info.plist */,
+			);
+			path = presentationTests;
+			sourceTree = "<group>";
+		};
+		BE6960BD1BF394140085FE07 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BE6960BB1BF3940D0085FE07 /* RomanConverterPresenter.swift */,
+			);
+			name = Presentation;
 			sourceTree = "<group>";
 		};
 		BEAF58501BD5426D00FBD472 /* Invoker */ = {
@@ -157,6 +246,7 @@
 				BEFF40FD1BF248BC0025130E /* BaseFacade.swift */,
 				BEE5A1991BF0EBA800131875 /* Command.swift */,
 				BEAF58511BD5439C00FBD472 /* Invoker.swift */,
+				BECF932B1BF4E92200084E6C /* LoggingInvoker.swift */,
 			);
 			name = Invoker;
 			sourceTree = "<group>";
@@ -171,11 +261,21 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		BECF932A1BF4E2DC00084E6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BED782F81BC6AF5D00F3CD14 /* RomanConverterViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		BED782EA1BC6AF5D00F3CD14 = {
 			isa = PBXGroup;
 			children = (
 				BED782F51BC6AF5D00F3CD14 /* kata-roman-numeral */,
 				BEE5A1A41BF0FB1F00131875 /* kata-roman-numeralTests */,
+				BE69609C1BF392400085FE07 /* presentation */,
+				BE6960AA1BF392400085FE07 /* presentationTests */,
 				BEE5A1741BF0E75C00131875 /* domain */,
 				BEE5A1821BF0E75C00131875 /* domainTests */,
 				BED782F41BC6AF5D00F3CD14 /* Products */,
@@ -189,6 +289,8 @@
 				BED783071BC6AF5D00F3CD14 /* kata-roman-numeralTests.xctest */,
 				BEE5A1731BF0E75C00131875 /* domain.framework */,
 				BEE5A17C1BF0E75C00131875 /* domainTests.xctest */,
+				BE69609B1BF3923F0085FE07 /* presentation.framework */,
+				BE6960A41BF392400085FE07 /* presentationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,9 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */,
-				BED782F81BC6AF5D00F3CD14 /* ViewController.swift */,
-				BEFF41031BF2549A0025130E /* Logger */,
-				BEAF58501BD5426D00FBD472 /* Invoker */,
+				BE6960951BF3912D0085FE07 /* Services */,
 				BE2F7C4E1BD13BAE0020F2DA /* Convert To Roman */,
 				BEC2CE981BC81C47001ED63C /* Resources */,
 				BED783021BC6AF5D00F3CD14 /* Info.plist */,
@@ -252,6 +352,16 @@
 			name = "kata-roman-numeralTests";
 			sourceTree = "<group>";
 		};
+		BEEE4F201BF62BE80097E8D2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BE2F7C4C1BD13BA80020F2DA /* ConvertToRomanInteractor.swift */,
+				BE85CEA51BE7B69D00D383C9 /* ConvertToRomanCommand.swift */,
+				BEFF40FB1BF23F650025130E /* ConvertToRomanFacade.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
 		BEFF41021BF24FB40025130E /* Dependecy Mock */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +390,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BE6960981BF3923F0085FE07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE69609E1BF392400085FE07 /* presentation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEE5A1701BF0E75C00131875 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +409,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BE69609A1BF3923F0085FE07 /* presentation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6960B21BF392400085FE07 /* Build configuration list for PBXNativeTarget "presentation" */;
+			buildPhases = (
+				BE6960961BF3923F0085FE07 /* Sources */,
+				BE6960971BF3923F0085FE07 /* Frameworks */,
+				BE6960981BF3923F0085FE07 /* Headers */,
+				BE6960991BF3923F0085FE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE6960BA1BF392A20085FE07 /* PBXTargetDependency */,
+			);
+			name = presentation;
+			productName = presentation;
+			productReference = BE69609B1BF3923F0085FE07 /* presentation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE6960A31BF392400085FE07 /* presentationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6960B51BF392400085FE07 /* Build configuration list for PBXNativeTarget "presentationTests" */;
+			buildPhases = (
+				BE6960A01BF392400085FE07 /* Sources */,
+				BE6960A11BF392400085FE07 /* Frameworks */,
+				BE6960A21BF392400085FE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE6960A71BF392400085FE07 /* PBXTargetDependency */,
+				BE6960A91BF392400085FE07 /* PBXTargetDependency */,
+			);
+			name = presentationTests;
+			productName = presentationTests;
+			productReference = BE6960A41BF392400085FE07 /* presentationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BED782F21BC6AF5D00F3CD14 /* kata-roman-numeral */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BED783101BC6AF5D00F3CD14 /* Build configuration list for PBXNativeTarget "kata-roman-numeral" */;
@@ -303,7 +459,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BEE5A1871BF0E75C00131875 /* PBXTargetDependency */,
+				BE6960AF1BF392400085FE07 /* PBXTargetDependency */,
 			);
 			name = "kata-roman-numeral";
 			productName = "kata-roman-numeral";
@@ -374,6 +530,13 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ondrej Fabian";
 				TargetAttributes = {
+					BE69609A1BF3923F0085FE07 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					BE6960A31BF392400085FE07 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BED782F21BC6AF5D00F3CD14;
+					};
 					BED782F21BC6AF5D00F3CD14 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -405,6 +568,8 @@
 			targets = (
 				BED782F21BC6AF5D00F3CD14 /* kata-roman-numeral */,
 				BED783061BC6AF5D00F3CD14 /* kata-roman-numeralTests */,
+				BE69609A1BF3923F0085FE07 /* presentation */,
+				BE6960A31BF392400085FE07 /* presentationTests */,
 				BEE5A1721BF0E75C00131875 /* domain */,
 				BEE5A17B1BF0E75C00131875 /* domainTests */,
 			);
@@ -412,6 +577,20 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE6960991BF3923F0085FE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6960A21BF392400085FE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BED782F11BC6AF5D00F3CD14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,11 +625,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE6960961BF3923F0085FE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6960BC1BF3940D0085FE07 /* RomanConverterPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6960A01BF392400085FE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECF93291BF4E06200084E6C /* TestExecutor.swift in Sources */,
+				BE6960AC1BF392400085FE07 /* presentationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BED782EF1BC6AF5D00F3CD14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BED782F91BC6AF5D00F3CD14 /* ViewController.swift in Sources */,
+				BED782F91BC6AF5D00F3CD14 /* RomanConverterViewController.swift in Sources */,
 				BEFF41081BF2654B0025130E /* ConsoleLogger.swift in Sources */,
 				BED782F71BC6AF5D00F3CD14 /* AppDelegate.swift in Sources */,
 				BEB391DB1BEBA85300D2C603 /* BackgroundExecutor.swift in Sources */,
@@ -476,6 +672,7 @@
 				BEFF40FF1BF248C70025130E /* BaseFacade.swift in Sources */,
 				BEFF41051BF265060025130E /* Logger.swift in Sources */,
 				BEE5A19A1BF0EBA800131875 /* Command.swift in Sources */,
+				BECF932C1BF4E92200084E6C /* LoggingInvoker.swift in Sources */,
 				BEFF40FC1BF23F650025130E /* ConvertToRomanFacade.swift in Sources */,
 				BEE5A19C1BF0EBCB00131875 /* Executor.swift in Sources */,
 				BEE5A1901BF0E77F00131875 /* Invoker.swift in Sources */,
@@ -495,6 +692,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BE6960A71BF392400085FE07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE69609A1BF3923F0085FE07 /* presentation */;
+			targetProxy = BE6960A61BF392400085FE07 /* PBXContainerItemProxy */;
+		};
+		BE6960A91BF392400085FE07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED782F21BC6AF5D00F3CD14 /* kata-roman-numeral */;
+			targetProxy = BE6960A81BF392400085FE07 /* PBXContainerItemProxy */;
+		};
+		BE6960AF1BF392400085FE07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE69609A1BF3923F0085FE07 /* presentation */;
+			targetProxy = BE6960AE1BF392400085FE07 /* PBXContainerItemProxy */;
+		};
+		BE6960BA1BF392A20085FE07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEE5A1721BF0E75C00131875 /* domain */;
+			targetProxy = BE6960B91BF392A20085FE07 /* PBXContainerItemProxy */;
+		};
 		BED783091BC6AF5D00F3CD14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BED782F21BC6AF5D00F3CD14 /* kata-roman-numeral */;
@@ -504,11 +721,6 @@
 			isa = PBXTargetDependency;
 			target = BEE5A1721BF0E75C00131875 /* domain */;
 			targetProxy = BEE5A17E1BF0E75C00131875 /* PBXContainerItemProxy */;
-		};
-		BEE5A1871BF0E75C00131875 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BEE5A1721BF0E75C00131875 /* domain */;
-			targetProxy = BEE5A1861BF0E75C00131875 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -532,6 +744,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BE6960B31BF392400085FE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = presentation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.fabo.presentation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE6960B41BF392400085FE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = presentation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.fabo.presentation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE6960B61BF392400085FE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = presentationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.fabo.presentationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kata-roman-numeral.app/kata-roman-numeral";
+			};
+			name = Debug;
+		};
+		BE6960B71BF392400085FE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = presentationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.fabo.presentationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kata-roman-numeral.app/kata-roman-numeral";
+			};
+			name = Release;
+		};
 		BED7830E1BC6AF5D00F3CD14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -730,6 +1009,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE6960B21BF392400085FE07 /* Build configuration list for PBXNativeTarget "presentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6960B31BF392400085FE07 /* Debug */,
+				BE6960B41BF392400085FE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6960B51BF392400085FE07 /* Build configuration list for PBXNativeTarget "presentationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6960B61BF392400085FE07 /* Debug */,
+				BE6960B71BF392400085FE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BED782EE1BC6AF5D00F3CD14 /* Build configuration list for PBXProject "kata-roman-numeral" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

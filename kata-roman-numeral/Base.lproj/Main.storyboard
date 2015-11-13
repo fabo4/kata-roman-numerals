@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Roman Converter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kata_roman_numeral" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RomanConverterViewController" customModule="kata_roman_numeral" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,12 +16,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A9k-wT-kwx">
+                                <rect key="frame" x="20" y="40" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="iIL-eX-c7Z"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svW-Qu-kcZ">
+                                <rect key="frame" x="273" y="143" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convertArabicToRoman:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vy2-H8-Iwn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roman:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJU-gO-FnQ">
+                                <rect key="frame" x="20" y="78" width="58" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="XJU-gO-FnQ" firstAttribute="top" secondItem="A9k-wT-kwx" secondAttribute="bottom" constant="8" id="2jQ-VU-ZJw"/>
+                            <constraint firstAttribute="trailing" secondItem="A9k-wT-kwx" secondAttribute="trailing" constant="20" id="53G-HQ-Spg"/>
+                            <constraint firstItem="A9k-wT-kwx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="ANN-wi-za0"/>
+                            <constraint firstItem="svW-Qu-kcZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vmq-2N-DHM"/>
+                            <constraint firstItem="svW-Qu-kcZ" firstAttribute="top" secondItem="XJU-gO-FnQ" secondAttribute="bottom" constant="44" id="jqJ-Tz-T2f"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="XJU-gO-FnQ" secondAttribute="leading" id="suI-NW-8N8"/>
+                            <constraint firstItem="A9k-wT-kwx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="sum-MQ-Fgn"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XJU-gO-FnQ" secondAttribute="trailing" constant="20" id="y6s-g7-no5"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="i7F-aa-Yve" appends="YES" id="6Fq-qt-Cn1"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="arabicTextField" destination="A9k-wT-kwx" id="Cfl-h1-dS0"/>
+                        <outlet property="romanLabel" destination="XJU-gO-FnQ" id="8FI-1Q-ZxN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="i7F-aa-Yve">
+                    <connections>
+                        <action selector="endEditing:" destination="BYZ-38-t0r" id="r5q-bk-5fq"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="664" y="325"/>
         </scene>
     </scenes>
 </document>

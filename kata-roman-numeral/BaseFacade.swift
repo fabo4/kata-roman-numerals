@@ -9,7 +9,7 @@
 public class BaseFacade {
     let invoker: Invoker
     
-    init(invoker: Invoker) {
+    public init(invoker: Invoker) {
         self.invoker = invoker
     }
     

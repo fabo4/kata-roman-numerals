@@ -27,11 +27,19 @@ enum Position: Int {
 }
 
 public struct ConvertToRomanRequest {
-    let arabic: String
+    public let arabic: String
+    
+    public init(arabic: String) {
+        self.arabic = arabic
+    }
 }
 
 public struct ConvertToRomanResponse {
-    let roman: String
+    public let roman: String
+    
+    public init(roman: String) {
+        self.roman = roman
+    }
 }
 
 
