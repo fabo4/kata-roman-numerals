@@ -1,5 +1,5 @@
 //
-//  ConvertToRomanPresenter.swift
+//  RomanConverterPresenter.swift
 //  kata-roman-numeral
 //
 //  Created by Ondrej Fabian on 11/11/2015.
@@ -12,7 +12,6 @@ public protocol RomanConverterView {
     func showRoman(roman: String) -> Void
 }
 
-
 public class BasePresenter<View> {
     weak var internalView: AnyObject?
     var view: View? {
@@ -24,7 +23,7 @@ public class BasePresenter<View> {
     }
 }
 
-public class ConvertToRomanPresenter: BasePresenter<RomanConverterView> {
+public class RomanConverterPresenter: BasePresenter<RomanConverterView> {
 
     let romanConverter: ConverToRomanFacade
     

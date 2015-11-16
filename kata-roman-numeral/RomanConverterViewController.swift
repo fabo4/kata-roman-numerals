@@ -15,12 +15,15 @@ class RomanConverterViewController: UIViewController, RomanConverterView, UIText
     @IBOutlet weak var arabicTextField: UITextField!
     @IBOutlet weak var romanLabel: UILabel!
     
-    lazy var presenter: ConvertToRomanPresenter = {
-        let executor = BackgroundExecutor()
-        let logger = ConsoleLogger()
-        let invoker = LoggingInvoker(executor: executor, logger: logger)
-        let converter = ConverToRomanFacade(invoker: invoker)
-        return ConvertToRomanPresenter(romanConverter: converter, view: self)
+    lazy var presenter: RomanConverterPresenter = {
+        
+//        let executor = BackgroundExecutor()
+//        let logger = ConsoleLogger()
+//        let invoker = LoggingInvoker(executor: executor, logger: logger)
+//        let converter = ConverToRomanFacade(invoker: invoker)
+        let assembly = ConvertToRomanFacadeAssembly().activate()
+        let converter = assembly.convertToRomanFacade() as! ConverToRomanFacade
+        return RomanConverterPresenter(romanConverter: converter, view: self)
     }()
     
     // MARK:- Actions
