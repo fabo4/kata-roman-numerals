@@ -26,9 +26,9 @@ public class BasePresenter<View> {
 
 public class ConvertToRomanPresenter: BasePresenter<RomanConverterView> {
 
-    let romanConverter: ConverToRomanFacade
+    let romanConverter: ConvertToRomanFacade
     
-    public init(romanConverter: ConverToRomanFacade, view: RomanConverterView) {
+    public init(romanConverter: ConvertToRomanFacade, view: RomanConverterView?) {
         self.romanConverter = romanConverter
         super.init(view: view)
     }

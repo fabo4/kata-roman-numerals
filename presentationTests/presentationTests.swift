@@ -16,7 +16,7 @@ class RomanConverterTestCase: XCTestCase {
     func testPresenterConversion() {
 
         let expectation = expectationWithDescription("")
-        let converter = ConverToRomanFacade(invoker: Invoker(executor: TestExecutor()))
+        let converter = ConvertToRomanFacade(invoker: Invoker(executor: TestExecutor()))
         let view = RomanConverterTestView(expectation: expectation)
         let presenter = ConvertToRomanPresenter(romanConverter: converter, view: view)
         
