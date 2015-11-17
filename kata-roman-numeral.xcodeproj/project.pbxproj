@@ -38,6 +38,8 @@
 		BEEE4F351BF641210097E8D2 /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F301BF641210097E8D2 /* Invoker.swift */; };
 		BEEE4F361BF641210097E8D2 /* LoggingInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */; };
 		BEEE4F381BF6417D0097E8D2 /* RomanConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */; };
+		BEEE4F531BFA2F460097E8D2 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEE4F521BFA2F460097E8D2 /* Swinject.framework */; };
+		BEEE4F541BFA2F460097E8D2 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEEE4F521BFA2F460097E8D2 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BEFF41011BF24E0D0025130E /* TestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41001BF24E0D0025130E /* TestExecutor.swift */; };
 		BEFF41081BF2654B0025130E /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41071BF2654B0025130E /* ConsoleLogger.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BEEE4F541BFA2F460097E8D2 /* Swinject.framework in Embed Frameworks */,
 				BE6960B11BF392400085FE07 /* presentation.framework in Embed Frameworks */,
 				BEE5A1891BF0E75C00131875 /* domain.framework in Embed Frameworks */,
 			);
@@ -138,6 +141,7 @@
 		BEEE4F301BF641210097E8D2 /* Invoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Invoker.swift; path = domain/Invoker.swift; sourceTree = SOURCE_ROOT; };
 		BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggingInvoker.swift; path = domain/LoggingInvoker.swift; sourceTree = SOURCE_ROOT; };
 		BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RomanConverterPresenter.swift; path = presentation/RomanConverterPresenter.swift; sourceTree = SOURCE_ROOT; };
+		BEEE4F521BFA2F460097E8D2 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		BEFF41001BF24E0D0025130E /* TestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestExecutor.swift; sourceTree = "<group>"; };
 		BEFF41071BF2654B0025130E /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6960B01BF392400085FE07 /* presentation.framework in Frameworks */,
+				BEEE4F531BFA2F460097E8D2 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +277,7 @@
 		BED782EA1BC6AF5D00F3CD14 = {
 			isa = PBXGroup;
 			children = (
+				BEEE4F521BFA2F460097E8D2 /* Swinject.framework */,
 				BED782F51BC6AF5D00F3CD14 /* kata-roman-numeral */,
 				BEE5A1A41BF0FB1F00131875 /* kata-roman-numeralTests */,
 				BE69609C1BF392400085FE07 /* presentation */,
@@ -899,6 +905,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "kata-roman-numeral/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cz.fabo.kata-roman-numeral";
@@ -911,6 +921,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "kata-roman-numeral/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cz.fabo.kata-roman-numeral";

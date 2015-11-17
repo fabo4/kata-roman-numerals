@@ -9,6 +9,7 @@
 import UIKit
 import presentation
 import domain
+import Swinject
 
 class RomanConverterViewController: UIViewController, RomanConverterView, UITextFieldDelegate {
     
@@ -16,12 +17,33 @@ class RomanConverterViewController: UIViewController, RomanConverterView, UIText
     @IBOutlet weak var romanLabel: UILabel!
     
     lazy var presenter: ConvertToRomanPresenter = {
-        let executor = BackgroundExecutor()
-        let logger = ConsoleLogger()
-        let invoker = LoggingInvoker(executor: executor, logger: logger)
-        let converter = ConverToRomanFacade(invoker: invoker)
-        return ConvertToRomanPresenter(romanConverter: converter, view: self)
+        let container = Container()
+        container.register(Executor.self, factory: { _ in
+            BackgroundExecutor()
+        })
+        container.register(Logger.self, factory: { _ in
+            ConsoleLogger()
+        })
+        
+        container.register(Invoker.self, factory: { r in
+            LoggingInvoker(executor: r.resolve(Executor.self)!, logger: r.resolve(Logger.self)!)
+        })
+        
+        container.register(ConvertToRomanFacade.self, factory: { r in
+            ConvertToRomanFacade(invoker: r.resolve(Invoker.self)!)
+        })
+        
+        container.register(ConvertToRomanPresenter.self, factory: { r in
+            ConvertToRomanPresenter(romanConverter: r.resolve(ConvertToRomanFacade.self)!)
+        })
+
+        return container.resolve(ConvertToRomanPresenter.self)!
     }()
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        presenter.view = self
+    }
     
     // MARK:- Actions
     @IBAction func convertArabicToRoman(sender: AnyObject) {
