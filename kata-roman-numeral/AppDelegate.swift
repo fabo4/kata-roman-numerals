@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         container.register(Invoker.self) { r in
             LoggingInvoker(executor: r.resolve(Executor.self)!, logger: r.resolve(Logger.self)!)
-        }
+        }.inObjectScope(.Container)
         
         container.register(ConvertToRomanFacade.self) { r in
             ConvertToRomanFacade(invoker: r.resolve(Invoker.self)!)
