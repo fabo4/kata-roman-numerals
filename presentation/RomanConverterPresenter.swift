@@ -24,23 +24,14 @@ public class BasePresenter<View> {
             internalView = newView as? AnyObject
         }
     }
-    
-    init(view: View?) {
-        self.view = view
-    }
 }
 
 public class ConvertToRomanPresenter: BasePresenter<RomanConverterView> {
 
     let romanConverter: ConvertToRomanFacade
     
-    public init(romanConverter: ConvertToRomanFacade, view: RomanConverterView?) {
+    public init(romanConverter: ConvertToRomanFacade) {
         self.romanConverter = romanConverter
-        super.init(view: view)
-    }
-    
-    convenience public init(romanConverter: ConvertToRomanFacade) {
-        self.init(romanConverter: romanConverter, view: nil)
     }
     
     public func convert(arabic: String) -> Void {
