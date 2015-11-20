@@ -141,7 +141,7 @@
 		BEEE4F301BF641210097E8D2 /* Invoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Invoker.swift; path = domain/Invoker.swift; sourceTree = SOURCE_ROOT; };
 		BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggingInvoker.swift; path = domain/LoggingInvoker.swift; sourceTree = SOURCE_ROOT; };
 		BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RomanConverterPresenter.swift; path = presentation/RomanConverterPresenter.swift; sourceTree = SOURCE_ROOT; };
-		BEEE4F521BFA2F460097E8D2 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		BEEE4F521BFA2F460097E8D2 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		BEFF41001BF24E0D0025130E /* TestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestExecutor.swift; sourceTree = "<group>"; };
 		BEFF41071BF2654B0025130E /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -277,7 +277,6 @@
 		BED782EA1BC6AF5D00F3CD14 = {
 			isa = PBXGroup;
 			children = (
-				BEEE4F521BFA2F460097E8D2 /* Swinject.framework */,
 				BED782F51BC6AF5D00F3CD14 /* kata-roman-numeral */,
 				BEE5A1A41BF0FB1F00131875 /* kata-roman-numeralTests */,
 				BE69609C1BF392400085FE07 /* presentation */,
@@ -304,10 +303,11 @@
 		BED782F51BC6AF5D00F3CD14 /* kata-roman-numeral */ = {
 			isa = PBXGroup;
 			children = (
-				BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */,
 				BE6960951BF3912D0085FE07 /* Services */,
-				BE2F7C4E1BD13BAE0020F2DA /* Convert To Roman */,
+				BEF5A6761BFF7055009FF02A /* Use Cases */,
 				BEC2CE981BC81C47001ED63C /* Resources */,
+				BEF5A6771BFF738D009FF02A /* Frameworks */,
+				BED782F61BC6AF5D00F3CD14 /* AppDelegate.swift */,
 				BED783021BC6AF5D00F3CD14 /* Info.plist */,
 			);
 			path = "kata-roman-numeral";
@@ -366,6 +366,22 @@
 				BEEE4F251BF640840097E8D2 /* ConvertToRomanInteractor.swift */,
 			);
 			name = Domain;
+			sourceTree = "<group>";
+		};
+		BEF5A6761BFF7055009FF02A /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				BE2F7C4E1BD13BAE0020F2DA /* Convert To Roman */,
+			);
+			name = "Use Cases";
+			sourceTree = "<group>";
+		};
+		BEF5A6771BFF738D009FF02A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE4F521BFA2F460097E8D2 /* Swinject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BEFF41021BF24FB40025130E /* Dependecy Mock */ = {
