@@ -40,6 +40,8 @@
 		BEEE4F381BF6417D0097E8D2 /* RomanConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */; };
 		BEEE4F531BFA2F460097E8D2 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEE4F521BFA2F460097E8D2 /* Swinject.framework */; };
 		BEEE4F541BFA2F460097E8D2 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEEE4F521BFA2F460097E8D2 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BEF5A6791BFF7F0D009FF02A /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5A6781BFF7F0D009FF02A /* BasePresenter.swift */; };
+		BEF5A67C1BFF7FB9009FF02A /* LoggerConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5A67A1BFF7FA6009FF02A /* LoggerConvenience.swift */; };
 		BEFF41011BF24E0D0025130E /* TestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41001BF24E0D0025130E /* TestExecutor.swift */; };
 		BEFF41081BF2654B0025130E /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41071BF2654B0025130E /* ConsoleLogger.swift */; };
 /* End PBXBuildFile section */
@@ -142,6 +144,8 @@
 		BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggingInvoker.swift; path = domain/LoggingInvoker.swift; sourceTree = SOURCE_ROOT; };
 		BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RomanConverterPresenter.swift; path = presentation/RomanConverterPresenter.swift; sourceTree = SOURCE_ROOT; };
 		BEEE4F521BFA2F460097E8D2 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		BEF5A6781BFF7F0D009FF02A /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		BEF5A67A1BFF7FA6009FF02A /* LoggerConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerConvenience.swift; sourceTree = "<group>"; };
 		BEFF41001BF24E0D0025130E /* TestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestExecutor.swift; sourceTree = "<group>"; };
 		BEFF41071BF2654B0025130E /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,8 +214,9 @@
 		BE6960951BF3912D0085FE07 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BEE5A1981BF0EB7300131875 /* Executor */,
+				BEF5A6811BFF805F009FF02A /* Invoker */,
 				BEFF41031BF2549A0025130E /* Logger */,
-				BEAF58501BD5426D00FBD472 /* Invoker */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -238,22 +243,9 @@
 			isa = PBXGroup;
 			children = (
 				BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */,
+				BEF5A6781BFF7F0D009FF02A /* BasePresenter.swift */,
 			);
 			name = Presentation;
-			sourceTree = "<group>";
-		};
-		BEAF58501BD5426D00FBD472 /* Invoker */ = {
-			isa = PBXGroup;
-			children = (
-				BEE5A1981BF0EB7300131875 /* Infrastructure */,
-				BEE5A19D1BF0EBFD00131875 /* Dependency */,
-				BEEE4F2D1BF641210097E8D2 /* BaseCommand.swift */,
-				BEEE4F2E1BF641210097E8D2 /* BaseFacade.swift */,
-				BEEE4F2F1BF641210097E8D2 /* Command.swift */,
-				BEEE4F301BF641210097E8D2 /* Invoker.swift */,
-				BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */,
-			);
-			name = Invoker;
 			sourceTree = "<group>";
 		};
 		BEC2CE981BC81C47001ED63C /* Resources */ = {
@@ -333,20 +325,21 @@
 			path = domainTests;
 			sourceTree = "<group>";
 		};
-		BEE5A1981BF0EB7300131875 /* Infrastructure */ = {
+		BEE5A1981BF0EB7300131875 /* Executor */ = {
 			isa = PBXGroup;
 			children = (
-				BEB391DA1BEBA85300D2C603 /* BackgroundExecutor.swift */,
+				BEF5A67E1BFF7FED009FF02A /* Infrastructure */,
 			);
-			name = Infrastructure;
+			name = Executor;
 			sourceTree = "<group>";
 		};
-		BEE5A19D1BF0EBFD00131875 /* Dependency */ = {
+		BEE5A19D1BF0EBFD00131875 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				BEEE4F2B1BF640E70097E8D2 /* Logger.swift */,
 				BEEE4F291BF640D90097E8D2 /* Executor.swift */,
 			);
-			name = Dependency;
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 		BEE5A1A41BF0FB1F00131875 /* kata-roman-numeralTests */ = {
@@ -384,6 +377,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BEF5A67E1BFF7FED009FF02A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				BEB391DA1BEBA85300D2C603 /* BackgroundExecutor.swift */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		BEF5A67F1BFF8023009FF02A /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE4F2D1BF641210097E8D2 /* BaseCommand.swift */,
+				BEEE4F2F1BF641210097E8D2 /* Command.swift */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
+		BEF5A6801BFF802B009FF02A /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE4F2E1BF641210097E8D2 /* BaseFacade.swift */,
+			);
+			name = Facade;
+			sourceTree = "<group>";
+		};
+		BEF5A6811BFF805F009FF02A /* Invoker */ = {
+			isa = PBXGroup;
+			children = (
+				BEF5A67F1BFF8023009FF02A /* Command */,
+				BEE5A19D1BF0EBFD00131875 /* Dependencies */,
+				BEF5A6801BFF802B009FF02A /* Facade */,
+				BEEE4F301BF641210097E8D2 /* Invoker.swift */,
+				BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */,
+			);
+			name = Invoker;
+			sourceTree = "<group>";
+		};
 		BEFF41021BF24FB40025130E /* Dependecy Mock */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,7 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				BEFF41061BF265340025130E /* Infrastructure */,
-				BEEE4F2B1BF640E70097E8D2 /* Logger.swift */,
+				BEF5A67A1BFF7FA6009FF02A /* LoggerConvenience.swift */,
 			);
 			name = Logger;
 			sourceTree = "<group>";
@@ -652,6 +682,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEE4F381BF6417D0097E8D2 /* RomanConverterPresenter.swift in Sources */,
+				BEF5A6791BFF7F0D009FF02A /* BasePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +728,7 @@
 				BEEE4F341BF641210097E8D2 /* Command.swift in Sources */,
 				BEEE4F331BF641210097E8D2 /* BaseFacade.swift in Sources */,
 				BEEE4F261BF640840097E8D2 /* ConvertToRomanCommand.swift in Sources */,
+				BEF5A67C1BFF7FB9009FF02A /* LoggerConvenience.swift in Sources */,
 				BEEE4F271BF640840097E8D2 /* ConvertToRomanFacade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

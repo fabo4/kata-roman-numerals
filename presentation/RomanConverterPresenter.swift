@@ -12,20 +12,6 @@ public protocol RomanConverterView {
     func showRoman(roman: String) -> Void
 }
 
-
-public class BasePresenter<View> {
-    weak var internalView: AnyObject?
-
-    public var view: View? {
-        get {
-            return internalView as? View
-        }
-        set(newView) {
-            internalView = newView as? AnyObject
-        }
-    }
-}
-
 public class ConvertToRomanPresenter: BasePresenter<RomanConverterView> {
 
     let romanConverter: ConvertToRomanFacade

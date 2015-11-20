@@ -16,21 +16,3 @@ public enum LogLevel {
 public protocol Logger {
     func log(level: LogLevel, message: String)
 }
-
-extension Logger {
-    func error(message: String) {
-        log(LogLevel.Error, message: message)
-    }
-    
-    func warning(message: String) {
-        log(LogLevel.Warning, message: message)
-    }
-    
-    func info(message: String) {
-        log(LogLevel.Info, message: message)
-    }
-    
-    func debug(message: String) {
-        log(LogLevel.Debug, message: message)
-    }
-}
