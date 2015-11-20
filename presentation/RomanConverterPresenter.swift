@@ -15,22 +15,23 @@ public protocol RomanConverterView {
 
 public class BasePresenter<View> {
     weak var internalView: AnyObject?
-    var view: View? {
-        return internalView as? View
-    }
-    
-    init(view: View) {
-        self.internalView = view as? AnyObject
+
+    public var view: View? {
+        get {
+            return internalView as? View
+        }
+        set(newView) {
+            internalView = newView as? AnyObject
+        }
     }
 }
 
 public class ConvertToRomanPresenter: BasePresenter<RomanConverterView> {
 
-    let romanConverter: ConverToRomanFacade
+    let romanConverter: ConvertToRomanFacade
     
-    public init(romanConverter: ConverToRomanFacade, view: RomanConverterView) {
+    public init(romanConverter: ConvertToRomanFacade) {
         self.romanConverter = romanConverter
-        super.init(view: view)
     }
     
     public func convert(arabic: String) -> Void {

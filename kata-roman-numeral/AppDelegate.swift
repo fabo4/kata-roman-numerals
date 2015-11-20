@@ -7,15 +7,59 @@
 //
 
 import UIKit
+import Swinject
+import presentation
+import domain
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let container = Container() { container in
+        
+        container.register(Executor.self) { _ in
+            BackgroundExecutor()
+        }
+        
+        container.register(Logger.self)  { _ in
+            ConsoleLogger()
+        }
+        
+        container.register(Invoker.self) { r in
+            LoggingInvoker(executor: r.resolve(Executor.self)!, logger: r.resolve(Logger.self)!)
+        }.inObjectScope(.Container)
+        
+        container.register(ConvertToRomanFacade.self) { r in
+            ConvertToRomanFacade(invoker: r.resolve(Invoker.self)!)
+        }
+        
+        container.register(ConvertToRomanPresenter.self) { r in
+            ConvertToRomanPresenter(romanConverter: r.resolve(ConvertToRomanFacade.self)!)
+            }
+            .initCompleted { r, presenter in
+                presenter.view = r.resolve(RomanConverterViewController.self)
+        }
+        
+        container.register(RomanConverterViewController.self) { resolvable in
+            let controller = (UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController() as! RomanConverterViewController)
+            controller.presenter = resolvable.resolve(ConvertToRomanPresenter.self)
+            return controller
+        }
+    }
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Instantiate a window.
+        let window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window.backgroundColor = UIColor.whiteColor()
+        window.makeKeyAndVisible()
+        self.window = window
+
+        // Instantiate the root view controller with dependencies injected by the container.
+        window.rootViewController = container.resolve(RomanConverterViewController.self)
+        
         return true
     }
 

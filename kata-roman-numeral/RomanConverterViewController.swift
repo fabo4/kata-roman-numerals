@@ -8,24 +8,17 @@
 
 import UIKit
 import presentation
-import domain
 
 class RomanConverterViewController: UIViewController, RomanConverterView, UITextFieldDelegate {
     
     @IBOutlet weak var arabicTextField: UITextField!
     @IBOutlet weak var romanLabel: UILabel!
     
-    lazy var presenter: ConvertToRomanPresenter = {
-        let executor = BackgroundExecutor()
-        let logger = ConsoleLogger()
-        let invoker = LoggingInvoker(executor: executor, logger: logger)
-        let converter = ConverToRomanFacade(invoker: invoker)
-        return ConvertToRomanPresenter(romanConverter: converter, view: self)
-    }()
+    var presenter: ConvertToRomanPresenter?
     
     // MARK:- Actions
     @IBAction func convertArabicToRoman(sender: AnyObject) {
-        presenter.convert(arabicTextField.text!)
+        presenter?.convert(arabicTextField.text!)
     }
     @IBAction func endEditing(sender: AnyObject) {
         view.endEditing(true)

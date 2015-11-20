@@ -6,7 +6,7 @@
 //  Copyright © 2015 Ondrej Fabian. All rights reserved.
 //
 
-public class ConverToRomanFacade: BaseFacade {
+public class ConvertToRomanFacade: BaseFacade {
     public func convert(request: ConvertToRomanRequest, completion: ConverterToRomanCompletion) -> Void {
         let command = ConvertToRomanCommand(receiver: ConvertToRomanInteractor(), request: request, completion: completion)
         self.run(command)
