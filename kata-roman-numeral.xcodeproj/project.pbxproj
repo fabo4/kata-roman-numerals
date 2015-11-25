@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BE5CA01C05A3C200C71542 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE5C9F1C05A3C200C71542 /* Swinject.framework */; };
 		BE69609E1BF392400085FE07 /* presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = BE69609D1BF392400085FE07 /* presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE6960A51BF392400085FE07 /* presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE69609B1BF3923F0085FE07 /* presentation.framework */; };
 		BE6960AC1BF392400085FE07 /* presentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6960AB1BF392400085FE07 /* presentationTests.swift */; };
@@ -38,8 +39,6 @@
 		BEEE4F351BF641210097E8D2 /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F301BF641210097E8D2 /* Invoker.swift */; };
 		BEEE4F361BF641210097E8D2 /* LoggingInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */; };
 		BEEE4F381BF6417D0097E8D2 /* RomanConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */; };
-		BEEE4F531BFA2F460097E8D2 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEE4F521BFA2F460097E8D2 /* Swinject.framework */; };
-		BEEE4F541BFA2F460097E8D2 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEEE4F521BFA2F460097E8D2 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BEF5A6791BFF7F0D009FF02A /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5A6781BFF7F0D009FF02A /* BasePresenter.swift */; };
 		BEF5A67C1BFF7FB9009FF02A /* LoggerConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5A67A1BFF7FA6009FF02A /* LoggerConvenience.swift */; };
 		BEFF41011BF24E0D0025130E /* TestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF41001BF24E0D0025130E /* TestExecutor.swift */; };
@@ -98,7 +97,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BEEE4F541BFA2F460097E8D2 /* Swinject.framework in Embed Frameworks */,
 				BE6960B11BF392400085FE07 /* presentation.framework in Embed Frameworks */,
 				BEE5A1891BF0E75C00131875 /* domain.framework in Embed Frameworks */,
 			);
@@ -108,6 +106,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18BE5C9F1C05A3C200C71542 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = SOURCE_ROOT; };
 		BE69609B1BF3923F0085FE07 /* presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE69609D1BF392400085FE07 /* presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = presentation.h; sourceTree = "<group>"; };
 		BE69609F1BF392400085FE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,7 +142,6 @@
 		BEEE4F301BF641210097E8D2 /* Invoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Invoker.swift; path = domain/Invoker.swift; sourceTree = SOURCE_ROOT; };
 		BEEE4F311BF641210097E8D2 /* LoggingInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggingInvoker.swift; path = domain/LoggingInvoker.swift; sourceTree = SOURCE_ROOT; };
 		BEEE4F371BF6417D0097E8D2 /* RomanConverterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RomanConverterPresenter.swift; path = presentation/RomanConverterPresenter.swift; sourceTree = SOURCE_ROOT; };
-		BEEE4F521BFA2F460097E8D2 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		BEF5A6781BFF7F0D009FF02A /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		BEF5A67A1BFF7FA6009FF02A /* LoggerConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerConvenience.swift; sourceTree = "<group>"; };
 		BEFF41001BF24E0D0025130E /* TestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestExecutor.swift; sourceTree = "<group>"; };
@@ -172,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6960B01BF392400085FE07 /* presentation.framework in Frameworks */,
-				BEEE4F531BFA2F460097E8D2 /* Swinject.framework in Frameworks */,
+				18BE5CA01C05A3C200C71542 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +370,7 @@
 		BEF5A6771BFF738D009FF02A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BEEE4F521BFA2F460097E8D2 /* Swinject.framework */,
+				18BE5C9F1C05A3C200C71542 /* Swinject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -507,6 +505,7 @@
 				BED782F01BC6AF5D00F3CD14 /* Frameworks */,
 				BED782F11BC6AF5D00F3CD14 /* Resources */,
 				BEB392111BECF84500D2C603 /* Embed Frameworks */,
+				18BE5C9B1C059FEA00C71542 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -676,6 +675,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18BE5C9B1C059FEA00C71542 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE6960961BF3923F0085FE07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -807,6 +823,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = presentation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -829,6 +846,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = presentation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -844,6 +862,10 @@
 		BE6960B61BF392400085FE07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = presentationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -856,6 +878,10 @@
 		BE6960B71BF392400085FE07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = presentationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -961,6 +987,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cz.fabo.kata-roman-numeral";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -977,6 +1004,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cz.fabo.kata-roman-numeral";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -984,6 +1012,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "kata-roman-numeralTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cz.fabo.kata-roman-numeralTests";
@@ -996,6 +1028,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "kata-roman-numeralTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cz.fabo.kata-roman-numeralTests";

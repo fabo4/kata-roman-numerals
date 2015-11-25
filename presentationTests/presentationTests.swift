@@ -18,9 +18,8 @@ class RomanConverterTestCase: XCTestCase {
         let expectation = expectationWithDescription("")
         let converter = ConvertToRomanFacade(invoker: Invoker(executor: TestExecutor()))
         let view = RomanConverterTestView(expectation: expectation)
-        let presenter = ConvertToRomanPresenter(romanConverter: converter, view: view)
-        
-        
+        let presenter = ConvertToRomanPresenter(romanConverter: converter)
+        presenter.view = view
         presenter.convert("")
         
         waitForExpectationsWithTimeout(5, handler: nil)
