@@ -9,7 +9,6 @@
 import XCTest
 @testable import presentation
 @testable import domain
-@testable import kata_roman_numeral
 
 class RomanConverterTestCase: XCTestCase {
     
